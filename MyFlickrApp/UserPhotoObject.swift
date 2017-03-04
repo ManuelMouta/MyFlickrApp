@@ -10,13 +10,13 @@ import Foundation
 
 struct UserPhotoObject {
     let farm : Int
-    let id : Int
+    let id : String
     let isFamily : Int
     let isFriend : Int
     let ispublic : Int
     let owner : String
     let secret : String
-    let server : Int
+    let server : String
     let title : String
     static var ListOfPhotos : [UserPhotoObject]? = [UserPhotoObject]()
     
@@ -24,13 +24,13 @@ struct UserPhotoObject {
         //Should use guard when: if the condition is not met, guard‘s else statement is run
         guard let
             farm = json["farm"] as? Int,
-            let id = json["id"] as? Int,
-            let isFamily = json["isFamily"] as? Int,
-            let isFriend = json["isFriend"] as? Int,
-            let isPublic = json["isPublic"] as? Int,
+            let id = json["id"] as? String,
+            let isFamily = json["isfamily"] as? Int,
+            let isFriend = json["isfriend"] as? Int,
+            let isPublic = json["ispublic"] as? Int,
             let owner = json["owner"] as? String,
             let secret = json["secret"] as? String,
-            let server = json["server"] as? Int,
+            let server = json["server"] as? String,
             let title = json["title"] as? String
         else {
             return nil
