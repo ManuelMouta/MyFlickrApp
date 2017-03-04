@@ -15,19 +15,26 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     @IBOutlet weak var tableViewResults: UITableView!
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        ServiceGetPhotosByUser.getPhotosByUserId()
-        return 10//.count
+        return UserPhotoObject.ListOfPhotos!.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        //TODO
+        cell.textLabel?.text = String(describing: UserPhotoObject.ListOfPhotos?[indexPath.row].id)
         return cell
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let notificationIdName = Notification.Name("NotifyDataLoaded")
+        // Register to receive notification
+        let notificationDataIsLoaded = NotificationCenter.default
+        notificationDataIsLoaded.addObserver(forName:notificationIdName,
+                       object:nil, queue:nil,
+                       using:catchNotification)
+
+        ServiceGetPhotosByUser.getPhotosByUserId()
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,6 +42,16 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         // Dispose of any resources that can be recreated.
     }
 
-
+    func catchNotification(notification:Notification) -> Void {
+        guard let userInfo = notification.userInfo,
+            let message  = userInfo["message"] as? String
+        else {
+            print("Failed to load Data!")
+            return
+        }
+        if message == "success"{
+            self.tableViewResults.reloadData()
+        }
+    }
 }
 

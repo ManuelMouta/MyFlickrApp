@@ -10,5 +10,6 @@ import Foundation
 
 struct FlickrAPIConstants {
     static let userId = "7247833%40N04"
-    static let apiKey = "275996195074ee43a62ea7d57fa23401"
+    static let apiKey = "b159b7c6cbf87f6080d89d7a79b37a9f"
+    static var ListOfPhotos : [PhotoObject]? = nil
 }

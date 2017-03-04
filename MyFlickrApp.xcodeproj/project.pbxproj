@@ -15,7 +15,6 @@
 		61E106D61E69D657002C6836 /* FlickrAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E106D51E69D657002C6836 /* FlickrAPIConstants.swift */; };
 		61E106D81E69D6E8002C6836 /* ServiceGetPhotosByUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E106D71E69D6E8002C6836 /* ServiceGetPhotosByUser.swift */; };
 		61E106DA1E69DCA3002C6836 /* UserPhotoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E106D91E69DCA3002C6836 /* UserPhotoObject.swift */; };
-		61E106DC1E69DEE3002C6836 /* PhotosList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E106DB1E69DEE3002C6836 /* PhotosList.swift */; };
 		61E106DE1E69DF79002C6836 /* PhotoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E106DD1E69DF79002C6836 /* PhotoObject.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,6 @@
 		61E106D51E69D657002C6836 /* FlickrAPIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrAPIConstants.swift; sourceTree = "<group>"; };
 		61E106D71E69D6E8002C6836 /* ServiceGetPhotosByUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceGetPhotosByUser.swift; sourceTree = "<group>"; };
 		61E106D91E69DCA3002C6836 /* UserPhotoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPhotoObject.swift; sourceTree = "<group>"; };
-		61E106DB1E69DEE3002C6836 /* PhotosList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosList.swift; sourceTree = "<group>"; };
 		61E106DD1E69DF79002C6836 /* PhotoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				61E106D91E69DCA3002C6836 /* UserPhotoObject.swift */,
-				61E106DB1E69DEE3002C6836 /* PhotosList.swift */,
 				61E106DD1E69DF79002C6836 /* PhotoObject.swift */,
 			);
 			name = Models;
@@ -216,7 +213,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				61E106DE1E69DF79002C6836 /* PhotoObject.swift in Sources */,
-				61E106DC1E69DEE3002C6836 /* PhotosList.swift in Sources */,
 				61E106DA1E69DCA3002C6836 /* UserPhotoObject.swift in Sources */,
 				61E106BA1E69C5F2002C6836 /* ViewController.swift in Sources */,
 				61E106B81E69C5F2002C6836 /* AppDelegate.swift in Sources */,
