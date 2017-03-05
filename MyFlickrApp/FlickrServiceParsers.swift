@@ -24,6 +24,7 @@ struct FlickrServiceParsers {
                     print("Failed to create object")
                 }
             }
+            TableViewDataManager.loadImagesDataFromUrl()
             NotificationManager.sendUpdateTableNotification()
             //print(UserPhotoObject.ListOfPhotos)
         }catch{
