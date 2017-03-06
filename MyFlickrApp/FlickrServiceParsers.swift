@@ -8,9 +8,20 @@
 
 import Foundation
 
+protocol GetPhotoServiceDelegate{
+    func refreshWithData(data:AnyObject)
+    func refreshWithData2(data:AnyObject)
+}
+
+
+extension GetPhotoServiceDelegate{
+    func refreshWithData2(data:AnyObject) {}
+}
+
 struct FlickrServiceParsers {
+    //Local variables
     
-    static func parseServicePhotosByUser(json : [String: Any]){
+    static func parseServicePhotosByUser(json : [String: Any], sender:GetPhotoServiceDelegate){
         
         do {
             //print(json)
@@ -24,9 +35,14 @@ struct FlickrServiceParsers {
                     print("Failed to create object")
                 }
             }
+            
             TableViewDataManager.loadImagesDataFromUrl()
-            NotificationManager.sendUpdateTableNotification()
+            
             //print(UserPhotoObject.ListOfPhotos)
+            DispatchQueue.main.async {
+                sender.refreshWithData(data: "success" as AnyObject)
+            }
+            
         }catch{
             print("error parsing json")
         }

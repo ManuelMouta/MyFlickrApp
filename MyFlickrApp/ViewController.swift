@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     //MARK: Local Variables
     
@@ -26,32 +28,46 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let notificationIdName = Notification.Name("NotifyDataLoaded")
-        // Register to receive notification
-        let notificationDataIsLoaded = NotificationCenter.default
-        notificationDataIsLoaded.addObserver(forName:notificationIdName,
-                       object:nil, queue:nil,
-                       using:catchNotification)
-
-        ServiceGetPhotosByUser.getPhotosByUserId()
+        let sender : GetPhotoServiceDelegate = self
+        FlickServices.getPublicPhotos(DispatchQoS.QoSClass.background,sender: sender) {(sucess, result) -> (Void) in
+            if(sucess) {
+                self.tableViewResults.reloadData()
+            }
+            else {
+                // error
+            }
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    func catchNotification(notification:Notification) -> Void {
-        guard let userInfo = notification.userInfo,
-            let message  = userInfo["message"] as? String
-        else {
-            print("Failed to load Data!")
-            return
-        }
-        if message == "success"{
+    
+    func getPhotosByUserId(success: Bool){
+        if(success){
             self.tableViewResults.reloadData()
+        }else{
+            //error
         }
     }
 }
+
+
+extension ViewController : GetPhotoServiceDelegate {
+    func refreshWithData(data:AnyObject){
+        if(data as! String == "success"){
+            self.tableViewResults.reloadData()
+        }else{
+            //error
+        }
+    }
+}
+
+/*extension String {
+    func isURL() -> Bool {
+        return self.hasPrefix("http")
+    }
+}*/
 
