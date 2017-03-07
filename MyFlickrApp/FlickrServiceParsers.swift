@@ -13,6 +13,9 @@ protocol GetPhotoServiceDelegate{
     func refreshWithData2(data:AnyObject)
 }
 
+protocol GetPhotoInfoServiceDelegate {
+    func refreshPhotoDetail(title:String,description:String)
+}
 
 extension GetPhotoServiceDelegate{
     func refreshWithData2(data:AnyObject) {}
@@ -36,11 +39,32 @@ struct FlickrServiceParsers {
                 }
             }
             
-            TableViewDataManager.loadImagesDataFromUrl()
+            TableViewDataManager.loadImagesDataFromUrl(sender: sender)
             
             //print(UserPhotoObject.ListOfPhotos)
+            
+        }catch{
+            print("error parsing json")
+        }
+    }
+    
+    static func parseServicePhotoDetail(json : [String: Any], sender:GetPhotoInfoServiceDelegate){
+        
+        do {
+            print(json)
+            let jsonArrayPhoto = json["photo"] as! [String:Any]?
+            print(jsonArrayPhoto)
+            let jsonTitle = jsonArrayPhoto?["title"] as! [String: Any]?
+            print(jsonTitle)
+            let title = jsonTitle!
+            let titleValue = jsonTitle?["_content"] as? String
+            let jsonDescription = jsonArrayPhoto?["description"] as! [String: Any]?
+            let description = jsonDescription!
+            let descriptionValue = jsonDescription?["_content"] as? String
+            //print(jsonPhoto)
+
             DispatchQueue.main.async {
-                sender.refreshWithData(data: "success" as AnyObject)
+                sender.refreshPhotoDetail(title:titleValue!,description:descriptionValue!)
             }
             
         }catch{

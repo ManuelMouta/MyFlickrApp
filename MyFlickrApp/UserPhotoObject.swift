@@ -36,6 +36,7 @@ struct UserPhotoObject {
             return nil
         }
         
+        
         self.farm = farm
         self.id = id
         self.isFamily = isFamily

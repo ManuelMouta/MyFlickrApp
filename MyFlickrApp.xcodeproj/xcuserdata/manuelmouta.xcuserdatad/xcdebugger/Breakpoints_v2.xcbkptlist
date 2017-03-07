@@ -9,172 +9,44 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyFlickrApp/TableViewDataManager.swift"
-            timestampString = "510356367.56452"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "loadImagesDataFromUrl()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyFlickrApp/TableViewDataManager.swift"
-            timestampString = "510356368.450103"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "loadImagesDataFromUrl()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyFlickrApp/TableViewDataManager.swift"
-            timestampString = "510356533.962366"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "loadImagesDataFromUrl()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyFlickrApp/TableViewDataManager.swift"
-            timestampString = "510356563.019875"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "loadImagesDataFromUrl()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "MyFlickrApp/ViewController.swift"
-            timestampString = "510496810.913431"
+            timestampString = "510575868.029332"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyFlickrApp.ViewController.viewDidLoad () -&gt; ()"
-                  moduleName = "MyFlickrApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/manuelmouta/Desktop/Swift/Tutorial%20apps/MyFlickrApp/MyFlickrApp/ViewController.swift"
-                  timestampString = "510491851.698698"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "136">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyFlickrApp.ViewController.(viewDidLoad () -&gt; ()).(closure #1)"
-                  moduleName = "MyFlickrApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/manuelmouta/Desktop/Swift/Tutorial%20apps/MyFlickrApp/MyFlickrApp/ViewController.swift"
-                  timestampString = "510491851.700928"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "219">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyFlickrApp/ServiceGetPhotosByUser.swift"
-            timestampString = "510495103.327377"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "getPublicPhotos(_:sender:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MyFlickrApp/FlickrServiceParsers.swift"
-            timestampString = "510496851.796477"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "parseServicePhotosByUser(json:sender:)"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "static MyFlickrApp.FlickrServiceParsers.parseServicePhotosByUser (json : Swift.Dictionary&lt;Swift.String, Any&gt;, sender : MyFlickrApp.GetPhotoServiceDelegate) -&gt; ()"
+                  symbolName = "MyFlickrApp.ViewController.tableView (__ObjC.UITableView, cellForRowAt : Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
                   moduleName = "MyFlickrApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/manuelmouta/Desktop/Swift/Tutorial%20apps/MyFlickrApp/MyFlickrApp/FlickrServiceParsers.swift"
-                  timestampString = "510496852.021447"
+                  urlString = "file:///Users/manuelmouta/Desktop/Swift/Tutorial%20apps/MyFlickrApp/MyFlickrApp/ViewController.swift"
+                  timestampString = "510575868.238797"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "3004">
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "103">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "static MyFlickrApp.FlickrServiceParsers.(parseServicePhotosByUser (json : Swift.Dictionary&lt;Swift.String, Any&gt;, sender : MyFlickrApp.GetPhotoServiceDelegate) -&gt; ()).(closure #1)"
+                  symbolName = "MyFlickrApp.ViewController.tableView (__ObjC.UITableView, cellForRowAt : Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
                   moduleName = "MyFlickrApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/manuelmouta/Desktop/Swift/Tutorial%20apps/MyFlickrApp/MyFlickrApp/FlickrServiceParsers.swift"
-                  timestampString = "510496852.022684"
+                  urlString = "file:///Users/manuelmouta/Desktop/Swift/Tutorial%20apps/MyFlickrApp/MyFlickrApp/ViewController.swift"
+                  timestampString = "510575868.240059"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "4">
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1108">
                </Location>
             </Locations>
          </BreakpointContent>
